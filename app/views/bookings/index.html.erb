@@ -1,0 +1,8 @@
+<div class="card">
+  <ol>
+    <% @bookings.each do |booking| %>
+      <li>The start date is:<%= booking.start_date %>, and the end date is:<%= booking.end_date %></li>
+
+    <% end %>
+  </ol>
+</div>
