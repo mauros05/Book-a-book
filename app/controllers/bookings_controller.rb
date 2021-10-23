@@ -1,5 +1,6 @@
 class BookingsController < ApplicationController
   def index
+    @book = Book.find(params[:book_id])
     @bookings = policy_scope(Booking).all
   end
 
