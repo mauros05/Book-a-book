@@ -1,14 +1,16 @@
 
-<div class="card" style="width: 36rem;">
-  <div class="card-body">
-    <h5 class="card-title"><%= @book.title %></h5>
-    <h6 class="card-subtitle mb-2 text-muted"><%= @book.edition %></h6>
-    <h6 class="card-subtitle mb-2 text-muted"><%= @book.author %></h6>
-    <div class="d-flex justify-content-around">
-      <%= link_to "Edit", edit_book_path(@book), class: "btn btn-primary" %>
-      <%= link_to "Delete", book_path(@book), method: :delete, data: {confirm: "Are you sure on deleting this precious book?"}, class: "btn btn-danger" %>
-      <%= link_to "Do a Booking", new_book_booking_path(@book), class: "btn btn-warning"%>
-      <%= link_to "See Bookings",  book_bookings_path(@book), class: "btn btn-success" %>
+<div class="position-relative">
+  <div class="card position-absolute" style="width: 28rem;">
+    <div class="card-body">
+      <h5 class="card-title"><%= @book.title %></h5>
+      <h6 class="card-subtitle mb-2 text-muted"><%= @book.edition %></h6>
+      <h6 class="card-subtitle mb-2 text-muted"><%= @book.author %></h6>
+      <div class="d-flex justify-content-around">
+        <%= link_to "Edit", edit_book_path(@book), class: "btn btn-primary" %>
+        <%= link_to "Delete", book_path(@book), method: :delete, data: {confirm: "Are you sure on deleting this precious book?"}, class: "btn btn-danger" %>
+        <%= link_to "Do a Booking", new_book_booking_path(@book), class: "btn btn-warning"%>
+        <%= link_to "See Bookings",  book_bookings_path(@book), class: "btn btn-success" %>
+      </div>
     </div>
   </div>
 </div>
