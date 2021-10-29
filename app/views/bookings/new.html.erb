@@ -1,5 +1,5 @@
 <%= simple_form_for [@book, @booking] do |f| %>
-<%= f.input :start_date %>
+<%= f.input :start_date, as: :date, html5: true %>
 <%= f.input :end_date %>
 <%= f.submit %>
 <% end %>
