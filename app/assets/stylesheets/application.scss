@@ -11,3 +11,23 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+//Layouts
+@import "layouts/bookings_index";
+
+body { background-color: #F6F5F5;}
+
+h1, h2, h3 {
+  color: #276678;
+  font-weight: bold;
+  text-align: center;
+}
+
+p {
+ color: #444444;
+ text-align: justify;
+}
+
+.container {
+  background-color: white;
+}
