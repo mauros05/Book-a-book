@@ -1,14 +1,13 @@
 
-     <div>
-      <div class="bi-banner">
-        <h1 class="text-center bi-h1">Bookings for "<%= @book.title %>"</h1>
-      </div>
-      <div class="container p-1">
-        <ol>
-          <% @book.bookings.each do |booking| %>
-            <li>The start date is: <%= booking.start_date %>, and the end date is: <%= booking.end_date %></li>
-          <% end %>
-        </ol>
-      </div>
+<div>
+  <div class="bi-banner">
+    <h2 class="text-center bi-h2"> Bookings for "<%= @book.title %>"</h1>
+    <div class="container-bi">
+      <ol class="bi-ol">
+        <% @book.bookings.each do |booking| %>
+          <div class="bi-card"><li>Booked from <%= booking.start_date %> to <%= booking.end_date %></li></div>
+        <% end %>
+      </ol>
     </div>
   </div>
+</div>

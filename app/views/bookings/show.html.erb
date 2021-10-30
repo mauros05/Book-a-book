@@ -1,4 +1,5 @@
-<h1><%= @booking.book.title %></h1>
-<ol>
-  <li> The start date is<%= @booking.start_date %>, and the end date is <%= @booking.end_date %></li>
-</ol>
+<div class="bs-cover">
+  <h2>Your booking for</h2><br>
+  <h1><em>"<%= @booking.book.title %>"</em></h1><br>
+   <h2>has been confirmed from:</h2> <h3><br><%= @booking.start_date %> to <%= @booking.end_date %></h3>
+</div>
