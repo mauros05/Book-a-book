@@ -2,39 +2,38 @@
 @import "config/fonts";
 @import "config/colors";
 @import "config/bootstrap_variables";
-
 // External libraries
 @import "bootstrap/scss/bootstrap";
 @import "font-awesome-sprockets";
 @import "font-awesome";
-
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
-
 //Layouts
 @import "layouts/bookings_index";
 @import "layouts/bookings_show";
 @import "layouts/books_show";
 
 body {
-  background-color: #F6F5F5;
-  position: relative;
+    background-color: #F6F5F5;
+    position: relative;
 }
 
-h1, h2, h3 {
-  color: #276678;
-  font-weight: bold;
-  text-align: center;
-  font-family: 'Montserrat', sans-serif;
+h1,
+h2,
+h3 {
+    color: #276678;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
 }
 
 p {
- color: #444444;
- text-align: justify;
- font-family: 'Source Sans Pro', sans-serif;
+    color: #444444;
+    text-align: justify;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .container {
-  background-color: white;
+    background-color: white;
 }

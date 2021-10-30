@@ -20,4 +20,8 @@ class BookPolicy < ApplicationPolicy
   def destroy?
     true if record.user == user
   end
+
+  def index?
+    true
+  end
 end

@@ -1,0 +1,17 @@
+<div>
+  <%= link_to "Create a new book", new_book_path, class: "btn", style: "color: white; background-color: #456268; border-radius: 50px;" %>
+</div>
+<div class="container d-flex justify-content-between">
+  <div class="row">
+    <% @books.each do |book| %>
+        <div class="card col-3 m-3" style="width: 15rem; box-shadow: 5px 5px 5px #456268; border-radius: 25px;">
+        <div class="card-body">
+          <h5 class="card-title"><%= book.title %></h5>
+          <h6 class="card-subtitle mb-2 text-muted"><%= book.edition %><sup>th</sup> Edition</h6>
+          <p class="card-subtitle mb-2"><i>Written by:</i> <br><%= book.author %></p>
+        </div>
+        <%= link_to "Show book", book_path(book), class: "btn p-2 mb-1", style: "color: white; background-color: #79A3B1; border-radius: 50px;" %>
+      </div>
+    <% end %>
+  </div>
+</div>
