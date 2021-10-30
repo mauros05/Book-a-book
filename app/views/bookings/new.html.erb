@@ -1,5 +1,11 @@
-<%= simple_form_for [@book, @booking] do |f| %>
-<%= f.input :start_date, as: :date, html5: true %>
-<%= f.input :end_date %>
-<%= f.submit %>
-<% end %>
+<div class ="bi-new-background">
+  <div class ="container bi-new rounded p-5 my-5">
+    <h3 class="text-left font-italic mb-3">Here is where your journey begins...</h3>
+    <p>Choose a range of dates where you would like to have the book <strong>"<%= @book.title %>"</strong></p>
+    <%= simple_form_for [@book, @booking] do |f| %>
+    <%= f.input :start_date, as: :date, html5: true %>
+    <%= f.input :end_date, as: :date, html5: true %>
+    <%= f.submit %>
+    <% end %>
+  </div>
+</div>
