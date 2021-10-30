@@ -1,14 +1,16 @@
-<div class="container py-5">
-  <div class="row">
-    <div class="col-12 col-md-6 offset-lg-3">
-      <div class="bg-white rounded p-3 shadow">
-        <h3>Create a new book :)</h3>
-        <%= simple_form_for @book do |f| %>
-          <%= f.input :title %>
-          <%= f.input :edition%>
-          <%= f.input :author %>
-          <%= f.submit class: "btn btn-primary"%>
-        <% end %>
+<div style= "background-size: cover; padding: 200px; background-image: url(https://images.pexels.com/photos/34627/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);">
+  <div>
+    <div class="row">
+      <div class="col-12 col-md-6 offset-lg-3">
+        <div class="bg-white rounded p-5 shadow">
+          <h1>Create a new book</h1>
+          <%= simple_form_for @book do |f| %>
+            <%= f.input :title %>
+            <%= f.input :edition%>
+            <%= f.input :author %>
+            <%= f.submit class: "btn btn-primary", style: "background-color: #1687A7; border-radius: 50px;" %>
+          <% end %>
+        </div>
       </div>
     </div>
   </div>

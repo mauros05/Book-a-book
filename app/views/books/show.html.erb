@@ -1,20 +1,23 @@
-
-<div class="container">
-  <div class="card m-5" style="width: 36rem; border-radius: 16px; box-shadow: 5px 5px 5px #456268;">
+<div class="card-trip">
+  <img src="https://images.pexels.com/photos/590493/pexels-photo-590493.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" />
+</div>
+<div class="card-book m-5">
+  <div class="img-book">
+    <img src="https://images.pexels.com/photos/256450/pexels-photo-256450.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" />
+  </div>
+  <div class="card w-75">
     <div class="card-body">
-    <div class="titles">
-      <h2 class="card-title text-center"><%= @book.title %> (<%= @book.edition %>th edition)</h2>
-      <h3 class="card-subtitle mb-2 text-muted text-center">Author: <%= @book.author %></h3>
-    </div>
-    <div>
-    <img src="https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="img-thumbnail" alt="">
-    </div>
-      <div class="d-flex justify-content-around m-3">
+      <h2 class="card-title"><%= @book.title %> (<%= @book.edition %>th edition)</h2>
+      <p>Author: <%= @book.author %></p>
+      <div class="btn-book">
         <%= link_to "Do a Booking", new_book_booking_path(@book), class: "btn btn-primary", style: "background-color: #276678; border-radius: 50px;" %>
         <%= link_to "Bookings",  book_bookings_path(@book), class: "btn btn-primary", style:"color: white; background-color: #1687A7; border-radius: 50px;" %>
-        <%= link_to "Edit", edit_book_path(@book), class: "btn btn-primary", style: "background-color: #276678; border-radius: 50px;"%>
-        <%= link_to "Delete", book_path(@book), method: :delete, data: {confirm: "Are you sure on deleting this precious book?"}, class: "btn btn-primary", style:"background-color: #1687A7; border-radius: 50px;"%>
+        <% if policy(@book).edit? %>
+          <%= link_to "Edit", edit_book_path(@book), class: "btn btn-primary", style: "background-color: #276678; border-radius: 50px;"%>
+          <%= link_to "Delete", book_path(@book), method: :delete, data: {confirm: "Are you sure on deleting this precious book?"}, class: "btn btn-primary", style:"background-color: #1687A7; border-radius: 50px;"%>
+        <% end %>
       </div>
+      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin viverra ac libero egestas mollis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas tempus odio sed leo sagittis auctor. Curabitur a placerat ante, sit amet accumsan magna. Phasellus finibus felis velit, ut ultrices arcu pharetra placerat. Nullam lacinia eros non risus tincidunt interdum. Duis blandit lacus eget tortor malesuada, et dignissim diam aliquam. Aliquam tincidunt magna non lacus fermentum ornare. Suspendisse nunc lorem, vestibulum nec massa id, dapibus porttitor eros. Ut dapibus molestie bibendum. Phasellus diam erat, eleifend eget dignissim vel, faucibus vitae est. Donec velit urna, dignissim sed rhoncus in, tristique sit amet nisi.</p>
     </div>
   </div>
 </div>
