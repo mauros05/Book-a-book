@@ -1,46 +1,43 @@
 <div class="cover-container d-flex w-100 p-3 mx-auto flex-column hero-image">
   <div class="p-5 px-3 text-center text-white">
     <h1>Your journey to share your favorite books.</h1>
-    <p class="lead">Expirience the joy of sharing with others.</p>
-    <p class="lead">
-      <a href="#" class="btn btn-lg btn-secondary fw-bold rounded">Learn more</a>
-    </p>
+    <p class="lead text-center text-white">Experience the joy of sharing with others.</p>
+      <%= link_to "Sign up now!", new_user_registration_path,style: "color: white; padding: 15px 70px 15px 70px; background-color: #276678; border-radius: 50px;" %>
+
   </div>
 </div>
 
 <div class="container p-5">
   <div class="row">
-    <div class="col-lg-4">
+    <div class="col-lg-4 text-center">
       <%= image_tag "https://images.pexels.com/photos/448835/pexels-photo-448835.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940", class: "bd-placeholder-img rounded-circle", style: "width:140px; height:140px; object-fit: cover;" %>
       <h2>Aquire new knowledge</h2>
       <p>Look for your favorite books and get the oportunity to read and share.</p>
     </div><!-- /.col-lg-4 -->
-    <div class="col-lg-4">
-      <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-      <h2>Heading</h2>
-      <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
-      <p><a class="btn btn-secondary" href="#">View details »</a></p>
+    <div class="col-lg-4 text-center">
+      <%= image_tag "https://images.pexels.com/photos/3049285/pexels-photo-3049285.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940", class: "bd-placeholder-img rounded-circle", style: "width:140px; height:140px; object-fit: cover;" %>
+      <h2>Become an influence</h2>
+      <p>Influence others toughts by sharing the book which change your perspective on a topic.</p>
     </div><!-- /.col-lg-4 -->
-    <div class="col-lg-4">
-      <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-      <h2>Heading</h2>
-      <p>And lastly this, the third column of representative placeholder content.</p>
-      <p><a class="btn btn-secondary" href="#">View details »</a></p>
+    <div class="col-lg-4 text-center">
+      <%= image_tag "https://images.pexels.com/photos/691637/pexels-photo-691637.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940", class: "bd-placeholder-img rounded-circle", style: "width:140px; height:140px; object-fit: cover;" %>
+      <h2>Be part of the journey</h2>
+      <p>Give a book a part of your story sharing how it helped you to shape your ideas.</p>
     </div><!-- /.col-lg-4 -->
   </div>
 </div>
 
 
-<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="..." class="d-block w-100" alt="...">
+      <img src="https://images.pexels.com/photos/6146970/pexels-photo-6146970.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" style="width:100%; height:75vh; object-fit: cover;" class="d-block w-100" alt="book friends">
     </div>
     <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
+      <img src="https://images.pexels.com/photos/7959809/pexels-photo-7959809.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" style="width:100%; height:75vh; object-fit: cover;" class="d-block w-100" alt="finding colaborators">
     </div>
     <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
+      <img src="https://images.pexels.com/photos/6209066/pexels-photo-6209066.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" style="width:100%; height:75vh; object-fit: cover;" class="d-block w-100" alt="men reading">
     </div>
   </div>
 </div>
