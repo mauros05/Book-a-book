@@ -1,13 +1,14 @@
 <div class="text-center">
-  <%= link_to "Create a new book", new_book_path, class: "btn", style: "color: white; background-color: #456268; border-radius: 50px;" %>
+  <%= link_to "Create a new book", new_book_path, class: "btn", style: "color: white; background-color: #456268; border-radius: 50px; padding: 5px 70px 5px 70px" %>
 <div class="row p-5">
   <% @books.each do |book| %>
   <div class="card-product col-5 m-3">
-    <img src="https://source.unsplash.com/random" />
-    <div class="card-product-infos">
+    <img src="https://images.pexels.com/photos/159866/books-book-pages-read-literature-159866.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
+    <div class="pl-2" style="width:450px">
       <h2><%= book.title %></h2>
       <p><%= book.edition %><sup>th</sup> Edition</p>
       <p class="card-subtitle mb-2"><i>Written by:</i> <br><%= book.author %></p>
+      <%= link_to "See details", book_path(book), style: "color: white; padding: 5px 30px 5px 30px; background-color: #276678; border-radius: 50px;" %>
     </div>
 </div>
   <% end %>
