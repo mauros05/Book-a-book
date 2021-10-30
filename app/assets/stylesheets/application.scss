@@ -9,3 +9,29 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+//Layouts
+@import "layouts/bookings_index";
+@import "layouts/bookings_show";
+body {
+    background-color: #F6F5F5;
+    position: relative;
+}
+
+h1,
+h2,
+h3 {
+    color: #276678;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    color: #444444;
+    text-align: justify;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.container {
+    background-color: white;
+}
