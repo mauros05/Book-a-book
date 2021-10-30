@@ -14,11 +14,11 @@ class BookPolicy < ApplicationPolicy
   end
 
   def update?
-    true
+    true if record.user == user
   end
 
   def destroy?
-    true
+    true if record.user == user
   end
 
   def index?
