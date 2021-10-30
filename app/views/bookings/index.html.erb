@@ -1,11 +1,10 @@
-
 <div>
   <div class="bi-banner">
     <h2 class="text-center bi-h2"> Bookings for "<%= @book.title %>"</h1>
     <div class="container-bi">
       <ol class="bi-ol">
         <% @book.bookings.each do |booking| %>
-          <div class="bi-card"><li>Booked from <%= booking.start_date %> to <%= booking.end_date %></li></div>
+          <div class="bi-card"><li>Booked by <%= booking.user.name %> from <%= booking.start_date %> to <%= booking.end_date %></li></div>
         <% end %>
       </ol>
     </div>

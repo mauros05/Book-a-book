@@ -2,7 +2,10 @@
   background-image: url(bookcover1.jpg);
   background-size: cover;
   background-position: center;
-  padding: 200px;
+  padding-top: 200px;
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-bottom: 350px;
   opacity: .95;
   align-items: center;
 }
@@ -26,12 +29,18 @@
   margin-bottom: 4px;
   margin-left: 0;
   margin-right: 0;
+  padding: 8px 60px;
   background: white;
-  padding: 8px 170px;
   border: 1px solid rgb(235,235,235);
   opacity: .89;
 }
 
-.bi.ol{
-  margin-left: 1.2em;
+.bi-card:hover {
+  background: rgb(151, 151, 151);
+  opacity: 1;
+  border: 1px solid rgb(151, 151, 151);
+}
+
+ol.bi-ol {
+  padding: 0px;
 }

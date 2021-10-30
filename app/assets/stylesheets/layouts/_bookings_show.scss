@@ -4,3 +4,21 @@
   background-size: cover;
   padding: 200px;
 }
+
+.btn-book-index {
+  color: white;
+  text-align: center;
+  padding: 8px 24px;
+  border-radius: 4px;
+  background: #1687A7;
+  transition: background 0.3s ease;
+}
+
+.btn-book-index:hover {
+  background: #276678;
+  color: white;
+}
+
+.bs-h3 {
+  margin-bottom: 5%;
+}

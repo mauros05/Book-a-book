@@ -12,9 +12,12 @@
 //Layouts
 @import "layouts/bookings_index";
 @import "layouts/bookings_show";
+@import "layouts/bookings_new";
+
 body {
     background-color: #F6F5F5;
     position: relative;
+    text-align: center;
 }
 
 h1,
